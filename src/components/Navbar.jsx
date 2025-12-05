@@ -43,26 +43,44 @@ const Navbar = () => {
   ]
 
   return (
-    <ul className="hidden md:flex items-center space-x-1 bg-black/80 backdrop-blur-xl px-3 py-3 rounded-full shadow-2xl border border-gray-800">
-      {navItems.map((item) => {
-        const sectionId = item.href.replace('#', '')
-        const isActive = activeSection === sectionId
-        return (
-          <li key={item.name}>
-            <a
-              className={`px-5 py-2.5 rounded-full transition-all duration-300 inline-block font-medium text-sm ${
-                isActive
-                  ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg shadow-purple-500/50'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
-              }`}
-              href={item.href}
-            >
-              {item.name}
-            </a>
-          </li>
-        )
-      })}
-    </ul>
+    <nav className="flex items-center justify-between w-full">
+      {/* Left - Name/Logo */}
+      <a className="flex items-center space-x-2" href="#">
+        <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/30">
+          <span className="text-white font-black text-sm">AZ</span>
+        </div>
+        <span className="text-lg font-black text-white tracking-tight">AKM Zakaria</span>
+      </a>
+
+      {/* Middle - Nav Links */}
+      <ul className="hidden md:flex items-center space-x-1 bg-black/80 backdrop-blur-xl px-2 py-2 rounded-full shadow-2xl border border-gray-800">
+        {navItems.map((item) => {
+          const sectionId = item.href.replace('#', '')
+          const isActive = activeSection === sectionId
+          return (
+            <li key={item.name}>
+              <a
+                className={`px-4 py-2 rounded-full transition-all duration-300 inline-block font-medium text-sm ${
+                  isActive
+                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg shadow-purple-500/50'
+                    : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+                }`}
+                href={item.href}
+              >
+                {item.name}
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+
+      {/* Right - Contact Button */}
+      <a href="#contact">
+        <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold py-2 px-5 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 text-sm">
+          CONTACT NOW
+        </button>
+      </a>
+    </nav>
   )
 }
 

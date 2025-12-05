@@ -9,6 +9,8 @@ const Projects = () => {
       tech: ['React', 'Node.js', 'MongoDB', 'OpenAI', 'Socket.io'],
       image:
         'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=1470&auto=format&fit=crop',
+      github: 'https://github.com/akmzakaria/akm-skillverse-client',
+      live: 'https://akm-skillverse.web.app/',
     },
     {
       title: 'E-Commerce Platform',
@@ -17,6 +19,8 @@ const Projects = () => {
       tech: ['Next.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
       image:
         'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1632&auto=format&fit=crop',
+      github: 'https://github.com/akmzakaria/hero-app',
+      live: 'https://hero-io-app-akm.netlify.app/',
     },
     {
       title: 'Task Management System',
@@ -25,6 +29,8 @@ const Projects = () => {
       tech: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'Chart.js'],
       image:
         'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop',
+      github: 'https://github.com/akmzakaria/toytopia-toystore',
+      live: 'https://orchid-toystore-akm.web.app',
     },
     {
       title: 'AI Content Generator',
@@ -33,6 +39,8 @@ const Projects = () => {
       tech: ['Next.js', 'OpenAI', 'MongoDB', 'Tailwind', 'Vercel'],
       image:
         'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop',
+      github: 'YOUR_GITHUB_LINK_HERE',
+      live: 'https://green-earth-akm.netlify.app/',
     },
     {
       title: 'Real-Time Analytics Dashboard',
@@ -41,6 +49,8 @@ const Projects = () => {
       tech: ['React', 'Express', 'MongoDB', 'D3.js', 'Redis'],
       image:
         'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop',
+      github: 'https://github.com/akmzakaria/zap-shift-client',
+      live: 'https://zapshift-akm.netlify.app',
     },
     {
       title: 'Social Media Platform',
@@ -49,6 +59,8 @@ const Projects = () => {
       tech: ['Next.js', 'Node.js', 'MongoDB', 'AWS S3', 'Socket.io'],
       image:
         'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1474&auto=format&fit=crop',
+      github: 'https://github.com/akmzakaria/dragon-news',
+      live: 'https://dragon-news-akm.web.app',
     },
   ]
 
@@ -95,7 +107,7 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
                 <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, idx) => (
                     <span
                       key={idx}
@@ -104,6 +116,24 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
+                </div>
+                <div className="flex gap-3">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-purple-600/20 hover:bg-purple-600/40 text-purple-300 font-semibold py-2 px-4 rounded-lg border border-purple-500/30 hover:border-purple-500/60 transition-all duration-300 text-center"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
             </motion.div>

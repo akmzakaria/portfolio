@@ -1,4 +1,3 @@
-import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -10,10 +9,9 @@ function App() {
   return (
     <div className="font-display bg-black text-gray-200">
       <div
-        className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black via-purple-950/40 to-black"
+        className="relative overflow-hidden bg-gradient-to-br from-black via-purple-950/40 to-black"
         id="home"
       >
-        <Header />
         <Hero />
       </div>
       <div className="bg-gradient-to-b from-black via-purple-950/20 to-black">
