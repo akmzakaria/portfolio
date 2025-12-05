@@ -34,11 +34,11 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex items-center space-x-6 mt-8"
             >
-              <span className="text-6xl font-black text-primary">5+</span>
+              <span className="text-6xl font-black text-primary">6+</span>
               <div className="font-bold uppercase tracking-wider text-gray-400">
-                <span>Years of</span>
+                <span>Months of</span>
                 <br />
-                <span>Experience</span>
+                <span>Learning</span>
               </div>
             </motion.div>
           </motion.div>

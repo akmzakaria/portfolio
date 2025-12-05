@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 import Navbar from './Navbar'
 
 // Text Content Component
@@ -24,11 +25,15 @@ const HeroText = () => {
       >
         Hi, I'm
         <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
-          AKM Zakaria
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600 inline-block">
+          <TypeAnimation
+            sequence={['AKM Zakaria', 2000, 'A Full Stack Developer', 2000]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            cursor={true}
+          />
         </span>
-        <br />
-        <span className="text-4xl md:text-5xl lg:text-6xl">Full Stack Developer</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
@@ -36,12 +41,12 @@ const HeroText = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="text-lg text-gray-300 max-w-xl mb-8"
       >
-        Building modern web applications with React, Node.js, and cutting-edge AI technologies
+        Building modern web applications with React, Next.js, Node.js, MongoDB, and cutting-edge AI
+        technologies
       </motion.p>
       <motion.a
-        href="https://drive.google.com/file/d/10RNqNeJe29lF4Bt-colD-_vFvvZHfRgy/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="https://drive.google.com/uc?export=download&id=10RNqNeJe29lF4Bt-colD-_vFvvZHfRgy"
+        download="AKM_Zakaria_Resume.pdf"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
@@ -95,9 +100,9 @@ const Hero = () => {
 
       {/* Hero Content */}
       <main className="relative pt-20">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-end px-6">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-center px-6">
           {/* Left Side - Text Content */}
-          <div className="flex items-center justify-start lg:w-3/5 py-12 lg:py-20">
+          <div className="flex items-center justify-start lg:w-3/5 py-12 lg:py-16">
             <HeroText />
           </div>
 

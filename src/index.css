@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-image-container {
   background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDHcrO3kITxHanAEPfydkXlBGxOB01HR5QZ2BAM5D1RrC-SG416hsRfqSDERF-w4b96v79dxrt79NSZl-IcfrtGkha8egA3Wt_U9fTXx5EKJ8SXOtWWaA2Q4KYiXPvXR_bliGIb3zrofQ5scVOp3rrJSzx5kTSGfgFQx6eU0kgiWeQaHwBu22wk_OwaWhXwedXY4O1IDkY7ysAU3EyBWla4IwgFTfct2KpsAlOx_g17314hnxBPNVQcJiv44G669hzu2Fxf07qoiU0);
   background-size: cover;

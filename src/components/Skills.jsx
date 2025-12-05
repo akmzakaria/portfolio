@@ -4,27 +4,27 @@ const Skills = () => {
   const skills = [
     {
       category: 'Frontend',
-      items: ['React.js', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Redux'],
+      items: ['React.js', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML/CSS'],
       icon: '⚛️',
     },
     {
       category: 'Backend',
-      items: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets'],
+      items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'API Integration'],
       icon: '🔧',
     },
     {
       category: 'Database',
-      items: ['MongoDB', 'PostgreSQL', 'Redis', 'Mongoose', 'Prisma'],
+      items: ['MongoDB', 'Firebase', 'Database Design', 'CRUD Operations'],
       icon: '🗄️',
     },
     {
-      category: 'AI & ML',
-      items: ['LLM Integration', 'OpenAI API', 'Prompt Engineering', 'RAG', 'Vector DBs'],
-      icon: '🤖',
+      category: 'Animation',
+      items: ['Framer Motion', 'AOS Animation', 'CSS Animations', 'Smooth Transitions'],
+      icon: '✨',
     },
     {
       category: 'Tools & Others',
-      items: ['Git', 'Docker', 'AWS', 'Vercel', 'Vibe Coding'],
+      items: ['Git & GitHub', 'Vercel', 'Netlify', 'VS Code', 'Vibe Coding'],
       icon: '🛠️',
     },
   ]

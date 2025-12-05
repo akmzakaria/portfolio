@@ -1,64 +1,60 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null)
   const projects = [
     {
-      title: 'AI-Powered Chat Application',
+      title: 'AKM SkillVerse',
       description:
-        'Real-time chat application integrated with LLM for intelligent responses. Built with React, Node.js, Socket.io, and OpenAI API.',
-      tech: ['React', 'Node.js', 'MongoDB', 'OpenAI', 'Socket.io'],
-      image:
-        'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=1470&auto=format&fit=crop',
+        'A comprehensive learning platform where users can browse and purchase courses, while instructors can create and publish their own educational content with full course management capabilities.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: '/akm-skillverse.png',
       github: 'https://github.com/akmzakaria/akm-skillverse-client',
       live: 'https://akm-skillverse.web.app/',
     },
     {
-      title: 'E-Commerce Platform',
+      title: 'Hero.io',
       description:
-        'Full-featured e-commerce platform with payment integration, admin dashboard, and real-time inventory management.',
-      tech: ['Next.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
-      image:
-        'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1632&auto=format&fit=crop',
+        'An innovative app store platform featuring a curated collection of various applications with smooth animations and modern UI, providing users with an intuitive browsing and installation experience.',
+      tech: ['React.js', 'AOS Animation', 'Framer Motion'],
+      image: '/hero.png',
       github: 'https://github.com/akmzakaria/hero-app',
       live: 'https://hero-io-app-akm.netlify.app/',
     },
     {
-      title: 'Task Management System',
+      title: 'Toy Store',
       description:
-        'Collaborative task management tool with real-time updates, team collaboration features, and analytics dashboard.',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'Chart.js'],
-      image:
-        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop',
+        'An e-commerce platform dedicated to toys where customers can browse, search, and purchase a wide variety of toys with secure authentication and real-time inventory updates. Enjoy fast, secure, and seamless shopping.',
+      tech: ['React.js', 'Firebase'],
+      image: '/toyzone.png',
       github: 'https://github.com/akmzakaria/toytopia-toystore',
       live: 'https://orchid-toystore-akm.web.app',
     },
     {
-      title: 'AI Content Generator',
+      title: 'Green Earth',
       description:
-        'Content generation platform using LLMs for creating blog posts, social media content, and marketing copy.',
-      tech: ['Next.js', 'OpenAI', 'MongoDB', 'Tailwind', 'Vercel'],
-      image:
-        'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop',
-      github: 'YOUR_GITHUB_LINK_HERE',
+        'An eco-friendly e-commerce platform for plant enthusiasts, featuring a beautiful catalog of plants with detailed care instructions, smooth animations, and seamless shopping experience. Enjoy a fast and seamless experience.',
+      tech: ['React.js', 'Framer Motion', 'AOS Animation'],
+      image: '/green-earth.png',
+      github: 'https://github.com/akmzakaria/green-earth',
       live: 'https://green-earth-akm.netlify.app/',
     },
     {
-      title: 'Real-Time Analytics Dashboard',
+      title: 'ZapShift',
       description:
-        'Interactive analytics dashboard with real-time data visualization and customizable widgets for business insights.',
-      tech: ['React', 'Express', 'MongoDB', 'D3.js', 'Redis'],
-      image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop',
+        'A full-stack parcel delivery platform with role-based access for customers, riders, and admins. Features real-time tracking, order management, and comprehensive admin dashboard for complete oversight.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: '/zapshift.png',
       github: 'https://github.com/akmzakaria/zap-shift-client',
       live: 'https://zapshift-akm.netlify.app',
     },
     {
-      title: 'Social Media Platform',
+      title: 'Dragon News',
       description:
-        'Full-stack social media application with posts, comments, likes, real-time notifications, and user profiles.',
-      tech: ['Next.js', 'Node.js', 'MongoDB', 'AWS S3', 'Socket.io'],
-      image:
-        'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1474&auto=format&fit=crop',
+        'A dynamic news portal delivering real-time news updates across various categories. Built with vanilla JavaScript, featuring responsive design and fast content loading for optimal user experience.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      image: '/dragon-news.png',
       github: 'https://github.com/akmzakaria/dragon-news',
       live: 'https://dragon-news-akm.web.app',
     },
@@ -93,7 +89,7 @@ const Projects = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="bg-gradient-to-br from-purple-950/30 to-black/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-purple-500/40 transition-all duration-300 border border-purple-500/30"
+              className="bg-gradient-to-br from-purple-950/30 to-black/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-purple-500/40 transition-all duration-300 border border-purple-500/30 flex flex-col"
             >
               <div className="relative h-48 overflow-hidden">
                 <motion.img
@@ -104,9 +100,15 @@ const Projects = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <p className="text-gray-300 mb-2 line-clamp-2">{project.description}</p>
+                <button
+                  onClick={() => setSelectedProject(project)}
+                  className="text-purple-400 hover:text-purple-300 text-sm font-medium mb-4 text-left transition-colors"
+                >
+                  Read more →
+                </button>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, idx) => (
                     <span
@@ -124,7 +126,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex-1 bg-purple-600/20 hover:bg-purple-600/40 text-purple-300 font-semibold py-2 px-4 rounded-lg border border-purple-500/30 hover:border-purple-500/60 transition-all duration-300 text-center"
                   >
-                    GitHub
+                    Code
                   </a>
                   <a
                     href={project.live}
@@ -132,7 +134,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center"
                   >
-                    Live Demo
+                    Live
                   </a>
                 </div>
               </div>
@@ -140,6 +142,77 @@ const Projects = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedProject(null)}
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-gradient-to-br from-purple-950/90 to-black/90 backdrop-blur-xl rounded-2xl p-8 max-w-2xl w-full border border-purple-500/30 shadow-2xl shadow-purple-500/20 max-h-[80vh] overflow-y-auto"
+            >
+              <div className="flex justify-between items-start mb-6">
+                <h3 className="text-3xl font-bold text-white">{selectedProject.title}</h3>
+                <button
+                  onClick={() => setSelectedProject(null)}
+                  className="text-gray-400 hover:text-white text-2xl transition-colors"
+                >
+                  ×
+                </button>
+              </div>
+
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                {selectedProject.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                {selectedProject.tech.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="px-4 py-2 bg-purple-500/20 text-purple-300 text-sm rounded-full border border-purple-500/30"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4">
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-purple-600/20 hover:bg-purple-600/40 text-purple-300 font-semibold py-3 px-6 rounded-lg border border-purple-500/30 hover:border-purple-500/60 transition-all duration-300 text-center"
+                >
+                  View Code
+                </a>
+                <a
+                  href={selectedProject.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }
