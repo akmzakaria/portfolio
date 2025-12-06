@@ -47,7 +47,7 @@ const Projects = () => {
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       image: '/zapshift.png',
       github: 'https://github.com/akmzakaria/zap-shift-client',
-      live: 'https://zapshift-akm.netlify.app',
+      live: 'https://zap-shift-akm.web.app',
     },
     {
       title: 'Dragon News',
