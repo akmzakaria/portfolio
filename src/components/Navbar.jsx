@@ -139,7 +139,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 h-screen w-64 bg-gradient-to-b from-black via-purple-950/40 to-black backdrop-blur-xl border-l border-purple-500/30 shadow-2xl md:hidden z-50"
+            className="fixed top-0 right-0 h-screen w-64 bg-gradient-to-b from-black via-purple-950/80 to-black backdrop-blur-xl border-l border-purple-500/30 shadow-2xl md:hidden z-50"
           >
             <div className="flex flex-col h-full p-6">
               {/* Close Button */}
@@ -178,10 +178,15 @@ const Navbar = () => {
                 })}
               </ul>
 
-              {/* Mobile Contact Button */}
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mt-auto">
+              {/* Mobile Resume Button */}
+              <a
+                href="https://drive.google.com/uc?export=download&id=10RNqNeJe29lF4Bt-colD-_vFvvZHfRgy"
+                download="AKM_Zakaria_Resume.pdf"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-auto"
+              >
                 <button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold py-3 px-6 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 shadow-lg shadow-purple-500/30">
-                  CONTACT NOW
+                  Resume
                 </button>
               </a>
             </div>
