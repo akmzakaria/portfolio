@@ -20,7 +20,7 @@ const Projects = () => {
       tech: ['React.js', 'AOS Animation', 'Framer Motion'],
       image: '/hero.png',
       github: 'https://github.com/akmzakaria/hero-app',
-      live: 'https://hero-io-app-akm.netlify.app/',
+      live: 'https://hero-app-akm.vercel.app',
     },
     {
       title: 'Toy Store',
@@ -38,7 +38,7 @@ const Projects = () => {
       tech: ['React.js', 'Framer Motion', 'AOS Animation'],
       image: '/green-earth.png',
       github: 'https://github.com/akmzakaria/green-earth',
-      live: 'https://green-earth-akm.netlify.app/',
+      live: 'https://green-earth-akm.vercel.app',
     },
     {
       title: 'ZapShift',
