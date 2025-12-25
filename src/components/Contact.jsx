@@ -76,7 +76,7 @@ const Contact = () => {
                   name="user_name"
                   required
                   className="w-full px-4 py-3 rounded-lg border border-purple-500/40 bg-black/50 text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500/60 placeholder:text-gray-500 transition-all"
-                  placeholder="John Doe"
+                  placeholder="AKM Zakaria"
                 />
               </div>
               <div>
@@ -92,7 +92,7 @@ const Contact = () => {
                   name="user_email"
                   required
                   className="w-full px-4 py-3 rounded-lg border border-purple-500/40 bg-black/50 text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500/60 placeholder:text-gray-500 transition-all"
-                  placeholder="john@example.com"
+                  placeholder="akm@example.com"
                 />
               </div>
             </div>
