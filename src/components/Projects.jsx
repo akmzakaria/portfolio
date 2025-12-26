@@ -5,16 +5,34 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
   const projects = [
     {
+      title: 'TicketGhor',
+      description:
+        'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: '/ticketghor-akm-2.png',
+      github: 'https://github.com/akmzakaria/TicketBari-client',
+      live: 'https://ticketghor-akm.vercel.app',
+    },
+    {
+      title: 'ZapShift',
+      description:
+        'A full-stack parcel delivery platform with role-based access for customers, riders, and admins. Features real-time tracking, order management, and comprehensive admin dashboard for complete oversight.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: '/zapshift.png',
+      github: 'https://github.com/akmzakaria/zap-shift-client',
+      live: 'https://zap-shift-akm.web.app',
+    },
+    {
       title: 'AKM SkillVerse',
       description:
         'A comprehensive learning platform where users can browse and purchase courses, while instructors can create and publish their own educational content with full course management capabilities.',
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       image: '/akm-skillverse.png',
       github: 'https://github.com/akmzakaria/akm-skillverse-client',
-      live: 'https://akm-skillverse.web.app/',
+      live: 'https://akm-skillverse.web.app',
     },
     {
-      title: 'Hero.io',
+      title: 'HERO.IO',
       description:
         'An innovative app store platform featuring a curated collection of various applications with smooth animations and modern UI, providing users with an intuitive browsing and installation experience.',
       tech: ['React.js', 'AOS Animation', 'Framer Motion'],
@@ -40,24 +58,15 @@ const Projects = () => {
       github: 'https://github.com/akmzakaria/green-earth',
       live: 'https://green-earth-akm.vercel.app',
     },
-    {
-      title: 'ZapShift',
-      description:
-        'A full-stack parcel delivery platform with role-based access for customers, riders, and admins. Features real-time tracking, order management, and comprehensive admin dashboard for complete oversight.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: '/zapshift.png',
-      github: 'https://github.com/akmzakaria/zap-shift-client',
-      live: 'https://zap-shift-akm.web.app',
-    },
-    {
-      title: 'Dragon News',
-      description:
-        'A dynamic news portal delivering real-time news updates across various categories. Built with vanilla JavaScript, featuring responsive design and fast content loading for optimal user experience.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      image: '/dragon-news.png',
-      github: 'https://github.com/akmzakaria/dragon-news',
-      live: 'https://dragon-news-akm.web.app',
-    },
+    // {
+    //   title: 'Dragon News',
+    //   description:
+    //     'A dynamic news portal delivering real-time news updates across various categories. Built with vanilla JavaScript, featuring responsive design and fast content loading for optimal user experience.',
+    //   tech: ['HTML', 'CSS', 'JavaScript'],
+    //   image: '/dragon-news.png',
+    //   github: 'https://github.com/akmzakaria/dragon-news',
+    //   live: 'https://dragon-news-akm.web.app',
+    // },
   ]
 
   return (
