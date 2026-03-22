@@ -49,9 +49,9 @@ const Navbar = () => {
     <nav className="flex items-center justify-between w-full">
       {/* Left - Name/Logo */}
       <a className="flex items-center space-x-2" href="#">
-        <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/30">
+        {/* <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/30">
           <span className="text-white font-black text-sm">AZ</span>
-        </div>
+        </div> */}
         <span className="text-lg font-black text-white tracking-tight">AKM Zakaria</span>
       </a>
 
