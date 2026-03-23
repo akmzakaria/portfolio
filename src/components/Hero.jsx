@@ -80,9 +80,9 @@ const HeroImage = () => {
         className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-purple-900/20 rounded-full blur-3xl"
       ></motion.div>
       <img
-        src="/profile2_edited.png"
+        src="/profile4_final.png"
         alt="Profile"
-        className="relative w-full h-auto object-contain rounded-b-3xl scale-150 mt-12 mb-12 md:mt-32"
+        className="relative w-full h-auto object-contain rounded-b-3xl scale-150 mt-5 mb-12 md:mt-32"
       />
     </div>
   )
