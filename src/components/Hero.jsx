@@ -82,7 +82,7 @@ const HeroImage = () => {
       <img
         src="/profile4_final.png"
         alt="Profile"
-        className="relative w-full h-auto object-contain rounded-b-3xl scale-150 mt-5 mb-12 md:mt-32"
+        className="relative w-full h-auto object-contain scale-150 mt-5 mb-20 md:mt-32"
       />
     </div>
   )
