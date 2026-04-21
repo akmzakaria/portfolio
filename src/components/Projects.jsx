@@ -105,15 +105,15 @@ const Projects = () => {
       github: 'https://github.com/akmzakaria/green-earth',
       live: 'https://green-earth-akm.vercel.app',
     },
-    // {
-    //   title: 'Dragon News',
-    //   description:
-    //     'A dynamic news portal delivering real-time news updates across various categories. Built with vanilla JavaScript, featuring responsive design and fast content loading for optimal user experience.',
-    //   tech: ['HTML', 'CSS', 'JavaScript'],
-    //   image: '/dragon-news.png',
-    //   github: 'https://github.com/akmzakaria/dragon-news',
-    //   live: 'https://dragon-news-akm.web.app',
-    // },
+    {
+      title: 'Dragon News',
+      description:
+        'A dynamic news portal delivering real-time news updates across various categories. Built with vanilla JavaScript, featuring responsive design and fast content loading for optimal user experience.',
+      tech: ['React.js', 'Firebase'],
+      image: '/dragon-news.png',
+      github: 'https://github.com/akmzakaria/dragon-news',
+      live: 'https://dragon-news-akm.web.app',
+    },
   ]
 
   return (
