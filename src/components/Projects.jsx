@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
+  const [showAll, setShowAll] = useState(false)
   const projects = [
     {
       title: 'Kothaa',
@@ -135,7 +136,7 @@ const Projects = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, showAll ? projects.length : 6).map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
@@ -195,6 +196,26 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {projects.length > 6 && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center mt-12"
+          >
+            <motion.button
+              onClick={() => setShowAll(!showAll)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
+            >
+              {showAll ? 'Show Less' : 'Show More'}
+            </motion.button>
+          </motion.div>
+        )}
       </div>
 
       {/* Modal */}
