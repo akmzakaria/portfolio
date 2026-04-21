@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'Kothaa',
       description: (
         <>
-          Kothaa is a modern real-time chat app focused on fluid communication. <br />
+          <b>Kothaa</b> is a modern real-time chat app focused on fluid communication. <br />
           <br />
           Key Features: <br />
           1. You can chat with others but you need to send a friend request first, and only if they
@@ -35,7 +35,7 @@ const Projects = () => {
       description: (
         <>
           <b>Infinity Note</b> is a simple and easy-to-use note-taking web app that focuses on a
-          smooth user experience. experience. <br />
+          smooth user experience. <br />
           <br /> Here's what you can do with it- <br />
           1. Create offline notes (stores in your local storage) <br />
           2. Create online notes (stores in the database, sign in needed) <br />
