@@ -5,6 +5,24 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
   const projects = [
     {
+      title: 'Kothaa',
+      description:
+        'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
+      tech: ['Next.js', 'TypeScript', 'MongoDB'],
+      image: '/kothaa_users.png',
+      github: 'https://github.com/akmzakaria/TicketBari-client',
+      live: 'https://ticketghor-akm.vercel.app',
+    },
+    {
+      title: 'TicketGhor',
+      description:
+        'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: '/ticketghor-akm-2.png',
+      github: 'https://github.com/akmzakaria/TicketBari-client',
+      live: 'https://ticketghor-akm.vercel.app',
+    },
+    {
       title: 'TicketGhor',
       description:
         'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
