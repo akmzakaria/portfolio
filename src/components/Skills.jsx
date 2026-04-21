@@ -4,12 +4,12 @@ const Skills = () => {
   const skills = [
     {
       category: 'Frontend',
-      items: ['React.js', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML/CSS'],
+      items: ['React.js', 'Next.js', 'Tailwind CSS', 'JavaScript', 'TypeScript'],
       icon: '⚛️',
     },
     {
       category: 'Backend',
-      items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'API Integration'],
+      items: ['Node.js', 'Express.js', 'REST APIs', 'JWT / Firebase Auth', 'API Integration'],
       icon: '🔧',
     },
     {
