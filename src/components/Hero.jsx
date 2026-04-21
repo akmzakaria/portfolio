@@ -45,7 +45,7 @@ const HeroText = () => {
         technologies
       </motion.p>
       <motion.a
-        href="https://drive.google.com/uc?export=download&id=1ZEb9RThNfrobBMPTR1otOPgxxWQQI2hq"
+        href="https://drive.google.com/uc?export=download&id=18RKLPyFcJrMBJuZzFvPbuiny0Qc4H_rv"
         download="AKM_Zakaria_Resume.pdf"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

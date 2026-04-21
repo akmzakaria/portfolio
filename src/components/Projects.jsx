@@ -6,21 +6,48 @@ const Projects = () => {
   const projects = [
     {
       title: 'Kothaa',
-      description:
-        'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
-      tech: ['Next.js', 'TypeScript', 'MongoDB'],
+      description: (
+        <>
+          Kothaa is a modern real-time chat app focused on fluid communication. <br />
+          <br />
+          Key Features: <br />
+          1. You can chat with others but you need to send a friend request first, and only if they
+          accept it. <br />
+          2. Real-time chatting is supported, so you can instantly see when someone is typing,
+          sending a message, or has seen your message. <br />
+          3. Messages can be edited or deleted anytime. <br />
+          4. You can block any user you want. <br />
+          5. You can see users' online status. 6. Both dark mode and light mode are available.{' '}
+          <br />
+          7. You can edit your profile and add a bio. <br />
+          8. You can log in using Google or email/password, and if you use email/password, a
+          verification link will be sent to your email which must be verified before logging in.
+        </>
+      ),
+      tech: ['Next.js', 'TypeScript', 'MongoDB', 'Firebase'],
       image: '/kothaa_users.png',
-      github: 'https://github.com/akmzakaria/TicketBari-client',
-      live: 'https://ticketghor-akm.vercel.app',
+      github: 'https://github.com/akmzakaria/kotha',
+      live: 'https://kothaa.vercel.app',
     },
     {
-      title: 'TicketGhor',
-      description:
-        'TicketGhor is an online ticket booking platform where people can easily search, book, and manage tickets for different types of transportation such as buses, trains, and flights—all in one place.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: '/ticketghor-akm-2.png',
-      github: 'https://github.com/akmzakaria/TicketBari-client',
-      live: 'https://ticketghor-akm.vercel.app',
+      title: 'Infinity Note',
+      description: (
+        <>
+          <b>Infinity Note</b> is a simple and easy-to-use note-taking web app that focuses on a
+          smooth user experience. experience. <br />
+          <br /> Here's what you can do with it- <br />
+          1. Create offline notes (stores in your local storage) <br />
+          2. Create online notes (stores in the database, sign in needed) <br />
+          3. Sync your offline notes to the database (if sign in later) <br />
+          4. Organize notes by categories <br />
+          5. Search bar functionality <br />
+          6. And the most importantly you can store notes INFINITELY
+        </>
+      ),
+      tech: ['Next.js', 'TypeScript', 'MongoDB', 'Firebase'],
+      image: '/infinity-note.png',
+      github: 'https://github.com/akmzakaria/Infinity-Note',
+      live: 'https://infinity-note.vercel.app',
     },
     {
       title: 'TicketGhor',
